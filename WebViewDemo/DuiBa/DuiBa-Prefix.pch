@@ -1,0 +1,21 @@
+//
+//  DuiBa-Prefix.pch
+//  DuiBa
+//
+//  Created by czy on 16/3/24.
+//  Copyright © 2016年 Caiziyi coporation. All rights reserved.
+//
+
+#ifndef DuiBa_Prefix_pch
+#define DuiBa_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* DuiBa_Prefix_pch */
+
+// 1.4.设备屏幕
+#define kMainScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kMainScreenHeight [UIScreen mainScreen].bounds.size.height
+#define kNetworkChangeNotification @"NetworkChange"
+#define kStatus [[Reachability reachabilityForInternetConnection] currentReachabilityStatus]
