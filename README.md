@@ -6,3 +6,5 @@ __1__[Swift闭包使用小练习](https://github.com/zfx5130/PrictiseDemo/tree/m
 __2__.[模仿微信发照片的Demo](https://github.com/zfx5130/PrictiseDemo/tree/master/WeiXinPick)
 
 __3__.[UIWebView封装](https://github.com/zfx5130/PrictiseDemo/tree/master/WebViewDemo)
+
+__4__.[详细实现微信输入框效果](http://www.jianshu.com/p/55d98e8f3e61)
