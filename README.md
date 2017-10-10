@@ -8,3 +8,10 @@ __2__.[模仿微信发照片的Demo](https://github.com/zfx5130/PrictiseDemo/tre
 __3__.[UIWebView封装](https://github.com/zfx5130/PrictiseDemo/tree/master/WebViewDemo)
 
 __4__.[详细实现微信输入框效果](http://www.jianshu.com/p/55d98e8f3e61)
+
+__5__.[指示器1](https://github.com/zfx5130/PrictiseDemo/tree/master/BQActivityView)
+
+__6__.[指示器2](https://github.com/zfx5130/PrictiseDemo/tree/master/JQIndicatorView)
+
+__6__.[指示器3](https://github.com/zfx5130/PrictiseDemo/tree/master/ZSHUDDemo)
+
