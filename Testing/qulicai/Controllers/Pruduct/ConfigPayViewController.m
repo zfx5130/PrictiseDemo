@@ -525,7 +525,7 @@
                 buyProduct.userId = [NSString getStringWithString:[UserUtil currentUser].userId];
                 buyProduct.productId = weakSelf.productId;
                 buyProduct.ticketId = weakSelf.ticket ? weakSelf.ticket.ticketId : @"";
-                buyProduct.amount = [NSString stringWithFormat:@"%.2f",f(money)];
+                buyProduct.amount = [NSString stringWithFormat:@"%.f",f(money)];
                 NSLog(@"购买金额为：：：：%.2f",money);
                 __weak typeof(self) weakSelf = self;
                 [buyProduct startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {

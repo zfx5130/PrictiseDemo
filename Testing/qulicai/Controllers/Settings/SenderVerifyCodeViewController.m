@@ -172,7 +172,7 @@
     QRRequestProductBuy *buyProduct = [[QRRequestProductBuy alloc] init];
     buyProduct.userId = [NSString getStringWithString:[UserUtil currentUser].userId];
     buyProduct.productId = self.productId;
-    buyProduct.amount = [NSString getStringWithString:money];
+    buyProduct.amount = [NSString stringWithFormat:@"%.f",f([money floatValue])];
     buyProduct.ticketId = [NSString getString:self.ticketId];
     NSLog(@"最终购买金额为：：：：%@",money);
     __weak typeof(self) weakSelf = self;
