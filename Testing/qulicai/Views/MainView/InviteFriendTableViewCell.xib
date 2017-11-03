@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PingFang.ttc">
+            <string>PingFangSC-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="InviteFriendTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="invite_friend_right_image" translatesAutoresizingMaskIntoConstraints="NO" id="ILu-69-chs">
+                        <rect key="frame" x="220" y="6" width="140" height="107.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="140" id="RNl-9k-0xi"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="好友越多  奖励越多" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBZ-iJ-RHa">
+                        <rect key="frame" x="15" y="69.5" width="113.5" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="163" id="5b6-kV-X6n"/>
+                            <constraint firstAttribute="height" constant="20" id="t0J-rm-qXc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="邀请好友" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pv-nC-epD">
+                        <rect key="frame" x="15" y="34.5" width="88" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="163" id="Qpt-g7-9EW"/>
+                            <constraint firstAttribute="height" constant="30" id="wdY-67-cfn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PingFangSC-Medium" family="PingFang SC" pointSize="22"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="赚现金" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sT-a3-1zb">
+                        <rect key="frame" x="113" y="34" width="66" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="163" id="LMP-2W-1A9"/>
+                            <constraint firstAttribute="height" constant="30" id="W8A-Gp-mMb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PingFangSC-Medium" family="PingFang SC" pointSize="22"/>
+                        <color key="textColor" red="0.94901960784313721" green="0.34901960784313724" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="NBZ-iJ-RHa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="8tV-uw-IEA"/>
+                    <constraint firstItem="3sT-a3-1zb" firstAttribute="centerY" secondItem="1pv-nC-epD" secondAttribute="centerY" id="DMQ-23-PeL"/>
+                    <constraint firstItem="NBZ-iJ-RHa" firstAttribute="top" secondItem="1pv-nC-epD" secondAttribute="bottom" constant="5" id="FFf-WN-lv5"/>
+                    <constraint firstAttribute="bottom" secondItem="NBZ-iJ-RHa" secondAttribute="bottom" constant="30" id="WIH-1i-JGA"/>
+                    <constraint firstItem="ILu-69-chs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="WUl-xG-WeD"/>
+                    <constraint firstAttribute="bottom" secondItem="ILu-69-chs" secondAttribute="bottom" constant="6" id="g2P-JH-0sE"/>
+                    <constraint firstItem="3sT-a3-1zb" firstAttribute="leading" secondItem="1pv-nC-epD" secondAttribute="trailing" constant="10" id="gUx-Hz-sfg"/>
+                    <constraint firstItem="1pv-nC-epD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="oau-ZO-qce"/>
+                    <constraint firstAttribute="trailing" secondItem="ILu-69-chs" secondAttribute="trailing" constant="15" id="yNl-ag-0Oo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="26.5" y="52"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="invite_friend_right_image" width="144" height="108"/>
+    </resources>
+</document>

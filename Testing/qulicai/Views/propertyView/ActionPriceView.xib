@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PingFang.ttc">
+            <string>PingFangSC-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActionPriceView">
+            <connections>
+                <outlet property="aView" destination="iN0-l3-epB" id="1lV-Rg-WTE"/>
+                <outlet property="cancleButton" destination="A3J-ZQ-x9Q" id="HyA-pt-6mC"/>
+                <outlet property="phoneImageView" destination="Kgn-Ev-xAw" id="p6D-B4-L4b"/>
+                <outlet property="phoneLeftConstraint" destination="5NJ-11-0KM" id="kgl-hH-BHL"/>
+                <outlet property="tilteBottonConstraint" destination="6xg-H4-1Tw" id="PyB-zv-gEU"/>
+                <outlet property="titleLabel" destination="TfT-Lx-2yV" id="F7J-Vb-yoD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="350"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dyZ-Kj-9xY">
+                    <rect key="frame" x="0.0" y="0.0" width="350" height="350"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone_bg_price" translatesAutoresizingMaskIntoConstraints="NO" id="8ZN-um-PAT">
+                            <rect key="frame" x="0.0" y="0.0" width="350" height="350"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone_8plus_image" translatesAutoresizingMaskIntoConstraints="NO" id="Kgn-Ev-xAw">
+                            <rect key="frame" x="115" y="110" width="50" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="hcv-2q-o0y"/>
+                                <constraint firstAttribute="height" constant="80" id="x2o-6g-p6j"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="恭喜你获得iphoneX一台!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="TfT-Lx-2yV">
+                            <rect key="frame" x="20" y="208" width="304" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="E5m-CV-FFe"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="19"/>
+                            <color key="textColor" red="1" green="0.8666666666666667" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3J-ZQ-x9Q">
+                            <rect key="frame" x="30" y="290" width="290" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="6zu-Y7-5lQ"/>
+                            </constraints>
+                            <state key="normal" title="我知道了">
+                                <color key="titleColor" red="0.94901960784313721" green="0.34901960784313724" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="客服会在48小时之内与您电话联系并确认收货地址,请保持手机畅通" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="RHx-Fv-t0P">
+                            <rect key="frame" x="20" y="244" width="310" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="oj6-2z-fct"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="8ZN-um-PAT" secondAttribute="trailing" id="1ci-Xw-WGF"/>
+                        <constraint firstItem="Kgn-Ev-xAw" firstAttribute="leading" secondItem="dyZ-Kj-9xY" secondAttribute="leading" constant="115" id="5NJ-11-0KM"/>
+                        <constraint firstItem="RHx-Fv-t0P" firstAttribute="top" secondItem="TfT-Lx-2yV" secondAttribute="bottom" constant="15" id="6xg-H4-1Tw"/>
+                        <constraint firstItem="RHx-Fv-t0P" firstAttribute="leading" secondItem="dyZ-Kj-9xY" secondAttribute="leading" constant="20" id="EaP-cY-dxD"/>
+                        <constraint firstItem="8ZN-um-PAT" firstAttribute="top" secondItem="dyZ-Kj-9xY" secondAttribute="top" id="J3S-hN-d7A"/>
+                        <constraint firstItem="A3J-ZQ-x9Q" firstAttribute="leading" secondItem="dyZ-Kj-9xY" secondAttribute="leading" constant="30" id="OUk-Mg-RTZ"/>
+                        <constraint firstAttribute="trailing" secondItem="RHx-Fv-t0P" secondAttribute="trailing" constant="20" id="OXy-fG-osC"/>
+                        <constraint firstItem="A3J-ZQ-x9Q" firstAttribute="top" secondItem="RHx-Fv-t0P" secondAttribute="bottom" constant="10" id="Wlq-8I-sym"/>
+                        <constraint firstAttribute="bottom" secondItem="A3J-ZQ-x9Q" secondAttribute="bottom" constant="20" id="eUL-tr-EuJ"/>
+                        <constraint firstAttribute="trailing" secondItem="TfT-Lx-2yV" secondAttribute="trailing" constant="26" id="fK5-sU-9gJ"/>
+                        <constraint firstItem="8ZN-um-PAT" firstAttribute="leading" secondItem="dyZ-Kj-9xY" secondAttribute="leading" id="hCk-1K-eZE"/>
+                        <constraint firstAttribute="bottom" secondItem="8ZN-um-PAT" secondAttribute="bottom" id="lQl-Ap-L7G"/>
+                        <constraint firstItem="Kgn-Ev-xAw" firstAttribute="centerY" secondItem="8ZN-um-PAT" secondAttribute="centerY" constant="-25" id="nmc-Ng-wkE"/>
+                        <constraint firstAttribute="trailing" secondItem="A3J-ZQ-x9Q" secondAttribute="trailing" constant="30" id="sb7-dP-Mc9"/>
+                        <constraint firstItem="TfT-Lx-2yV" firstAttribute="leading" secondItem="dyZ-Kj-9xY" secondAttribute="leading" constant="20" id="uln-Pd-LAa"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="dyZ-Kj-9xY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="AVj-HG-m3i"/>
+                <constraint firstItem="dyZ-Kj-9xY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="JSP-gC-76k"/>
+                <constraint firstAttribute="bottom" secondItem="dyZ-Kj-9xY" secondAttribute="bottom" id="iBN-Xn-8W4"/>
+                <constraint firstAttribute="trailing" secondItem="dyZ-Kj-9xY" secondAttribute="trailing" id="uEM-fj-XiX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="78" y="218"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iphone_8plus_image" width="70" height="107"/>
+        <image name="iphone_bg_price" width="375" height="444"/>
+    </resources>
+</document>

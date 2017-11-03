@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductBuySuccessViewController">
+            <connections>
+                <outlet property="configButton" destination="B58-ac-gBF" id="DKg-yd-Dvq"/>
+                <outlet property="secondLabel" destination="tZP-5E-ScE" id="XDq-nT-sNA"/>
+                <outlet property="titleLabel" destination="l9Y-3i-CAa" id="eG6-XT-atQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XM9-nJ-9l9">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3DT-fq-O9y" userLabel=" Bottom View">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buy_success_image" translatesAutoresizingMaskIntoConstraints="NO" id="zYj-nC-yQQ">
+                                    <rect key="frame" x="155" y="100" width="65" height="65"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="zYj-nC-yQQ" secondAttribute="height" multiplier="1:1" id="f6S-E0-6Yc"/>
+                                        <constraint firstAttribute="width" constant="65" id="tOg-Ne-Pif"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="购买成功！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="l9Y-3i-CAa">
+                                    <rect key="frame" x="155" y="185" width="71.5" height="17"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="17" id="6hP-cF-8N5"/>
+                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="90" id="KV4-XN-X2g"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="认购金额(元) " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZP-5E-ScE">
+                                    <rect key="frame" x="15" y="210" width="345" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="5Gf-IX-PxK"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B58-ac-gBF">
+                                    <rect key="frame" x="87" y="275" width="200" height="40"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="TRV-F5-bFH"/>
+                                        <constraint firstAttribute="width" constant="200" id="cvx-U0-eaw"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <state key="normal" title="确定" backgroundImage="config_small_button_image"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                            <integer key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="config:" destination="-1" eventType="touchUpInside" id="ua2-ny-oY9"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="tZP-5E-ScE" secondAttribute="trailing" constant="15" id="3z8-qO-jHa"/>
+                                <constraint firstItem="tZP-5E-ScE" firstAttribute="leading" secondItem="3DT-fq-O9y" secondAttribute="leading" constant="15" id="4n8-Az-yCX"/>
+                                <constraint firstItem="B58-ac-gBF" firstAttribute="top" secondItem="zYj-nC-yQQ" secondAttribute="bottom" constant="110" id="KsH-cG-SJI"/>
+                                <constraint firstItem="zYj-nC-yQQ" firstAttribute="centerX" secondItem="3DT-fq-O9y" secondAttribute="centerX" id="UV3-VI-5Ot"/>
+                                <constraint firstItem="l9Y-3i-CAa" firstAttribute="top" secondItem="zYj-nC-yQQ" secondAttribute="bottom" constant="20" id="XTx-PP-m9m"/>
+                                <constraint firstItem="l9Y-3i-CAa" firstAttribute="centerX" secondItem="zYj-nC-yQQ" secondAttribute="centerX" constant="3" id="Xhn-IS-jeq"/>
+                                <constraint firstItem="tZP-5E-ScE" firstAttribute="top" secondItem="l9Y-3i-CAa" secondAttribute="bottom" constant="8" id="aeV-DR-YEU"/>
+                                <constraint firstItem="zYj-nC-yQQ" firstAttribute="top" secondItem="3DT-fq-O9y" secondAttribute="top" constant="100" id="ema-hg-C9v"/>
+                                <constraint firstItem="B58-ac-gBF" firstAttribute="centerX" secondItem="3DT-fq-O9y" secondAttribute="centerX" id="fmA-wB-6hw"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="3DT-fq-O9y" secondAttribute="bottom" id="Hhm-OG-BGR"/>
+                        <constraint firstItem="3DT-fq-O9y" firstAttribute="top" secondItem="XM9-nJ-9l9" secondAttribute="top" id="txF-q1-Y51"/>
+                        <constraint firstAttribute="trailing" secondItem="3DT-fq-O9y" secondAttribute="trailing" id="x3d-Im-6OZ"/>
+                        <constraint firstItem="3DT-fq-O9y" firstAttribute="leading" secondItem="XM9-nJ-9l9" secondAttribute="leading" id="z8W-Ia-LLJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XM9-nJ-9l9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4Ea-WH-jtf"/>
+                <constraint firstAttribute="bottom" secondItem="XM9-nJ-9l9" secondAttribute="bottom" id="a7L-b6-EAN"/>
+                <constraint firstAttribute="trailing" secondItem="XM9-nJ-9l9" secondAttribute="trailing" id="kfC-XQ-XSZ"/>
+                <constraint firstItem="XM9-nJ-9l9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ntC-Fv-ZjE"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="buy_success_image" width="65" height="65"/>
+        <image name="config_small_button_image" width="200" height="40"/>
+    </resources>
+</document>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TotalPropertyViewController">
+            <connections>
+                <outlet property="tableView" destination="tlK-jI-gur" id="qma-ob-zJx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="tlK-jI-gur">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="QTm-Ku-O7l"/>
+                        <outlet property="delegate" destination="-1" id="JTK-9G-KNr"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hmB-wf-VBH" userLabel="Bottom View">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CeH-3o-fiM" userLabel="Bottom View">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="HUt-ir-hLw"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9oD-q1-hwf" userLabel="left Button">
+                            <rect key="frame" x="0.0" y="0.0" width="187.5" height="50"/>
+                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="充值" image="charge_button_image">
+                                <color key="titleColor" red="0.44313725490196076" green="0.68627450980392157" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="charge:" destination="-1" eventType="touchUpInside" id="dfz-rJ-IIe"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fna-X7-YxO" userLabel="left Button">
+                            <rect key="frame" x="187.5" y="0.0" width="187.5" height="50"/>
+                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="提现" image="pickup_button_image">
+                                <color key="titleColor" red="0.4431372549" green="0.68627450980000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="pickup:" destination="-1" eventType="touchUpInside" id="Xch-gv-J4M"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t21-r3-RHS" userLabel="Line view">
+                            <rect key="frame" x="187" y="0.0" width="1" height="50"/>
+                            <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="fiL-wD-yF8"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="fna-X7-YxO" firstAttribute="top" secondItem="hmB-wf-VBH" secondAttribute="top" id="0Nw-49-DvU"/>
+                        <constraint firstItem="CeH-3o-fiM" firstAttribute="leading" secondItem="hmB-wf-VBH" secondAttribute="leading" id="EqH-rd-Ynk"/>
+                        <constraint firstAttribute="bottom" secondItem="9oD-q1-hwf" secondAttribute="bottom" id="IvI-iI-pNb"/>
+                        <constraint firstAttribute="height" constant="50" id="Lat-di-vtM"/>
+                        <constraint firstItem="9oD-q1-hwf" firstAttribute="top" secondItem="hmB-wf-VBH" secondAttribute="top" id="NrE-r7-UTk"/>
+                        <constraint firstAttribute="trailing" secondItem="fna-X7-YxO" secondAttribute="trailing" id="PGg-Vn-ajY"/>
+                        <constraint firstItem="fna-X7-YxO" firstAttribute="leading" secondItem="9oD-q1-hwf" secondAttribute="trailing" id="VXR-1H-Bnl"/>
+                        <constraint firstItem="9oD-q1-hwf" firstAttribute="width" secondItem="hmB-wf-VBH" secondAttribute="width" multiplier="0.5" id="WfR-gN-mAW"/>
+                        <constraint firstItem="9oD-q1-hwf" firstAttribute="leading" secondItem="hmB-wf-VBH" secondAttribute="leading" id="hrd-iT-mPQ"/>
+                        <constraint firstAttribute="bottom" secondItem="t21-r3-RHS" secondAttribute="bottom" id="i5c-iq-sjb"/>
+                        <constraint firstAttribute="bottom" secondItem="fna-X7-YxO" secondAttribute="bottom" id="o5P-m0-Mxu"/>
+                        <constraint firstItem="t21-r3-RHS" firstAttribute="centerX" secondItem="hmB-wf-VBH" secondAttribute="centerX" id="oSd-gU-EaN"/>
+                        <constraint firstItem="CeH-3o-fiM" firstAttribute="top" secondItem="hmB-wf-VBH" secondAttribute="top" id="p3f-fp-Hgc"/>
+                        <constraint firstAttribute="trailing" secondItem="CeH-3o-fiM" secondAttribute="trailing" id="pnf-N9-3YG"/>
+                        <constraint firstItem="t21-r3-RHS" firstAttribute="top" secondItem="hmB-wf-VBH" secondAttribute="top" id="xbn-ga-Q7W"/>
+                        <constraint firstItem="t21-r3-RHS" firstAttribute="centerY" secondItem="hmB-wf-VBH" secondAttribute="centerY" id="zB1-qe-7un"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="hmB-wf-VBH" secondAttribute="bottom" id="Lws-Jz-u1C"/>
+                <constraint firstItem="tlK-jI-gur" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="PEe-7Z-8Lc"/>
+                <constraint firstAttribute="trailing" secondItem="hmB-wf-VBH" secondAttribute="trailing" id="cEj-b2-2Dc"/>
+                <constraint firstAttribute="trailing" secondItem="tlK-jI-gur" secondAttribute="trailing" id="rh7-fb-7vP"/>
+                <constraint firstItem="hmB-wf-VBH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vWa-bv-UUe"/>
+                <constraint firstItem="tlK-jI-gur" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wFS-os-3kZ"/>
+                <constraint firstItem="hmB-wf-VBH" firstAttribute="top" secondItem="tlK-jI-gur" secondAttribute="bottom" id="xrt-oc-Slg"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="charge_button_image" width="21" height="21"/>
+        <image name="pickup_button_image" width="17" height="18"/>
+    </resources>
+</document>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductIncomeViewController">
+            <connections>
+                <outlet property="tableView" destination="S2j-s2-tx2" id="bCA-sm-5Id"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="S2j-s2-tx2">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <view key="tableHeaderView" contentMode="scaleToFill" id="50f-4D-pd9" userLabel="Head View">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="借款人" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDM-vX-HEg">
+                                <rect key="frame" x="15" y="0.0" width="112.5" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="借款金额(元)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aer-Mm-7kP">
+                                <rect key="frame" x="268" y="0.0" width="92" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="92" id="iXt-ZQ-87l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="身份证号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mo-sy-bhb">
+                                <rect key="frame" x="128" y="0.0" width="140" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Aer-Mm-7kP" secondAttribute="trailing" constant="15" id="6HB-RX-itd"/>
+                            <constraint firstAttribute="bottom" secondItem="7mo-sy-bhb" secondAttribute="bottom" id="8b6-im-dX2"/>
+                            <constraint firstItem="Aer-Mm-7kP" firstAttribute="top" secondItem="50f-4D-pd9" secondAttribute="top" id="Dv5-dt-Qoq"/>
+                            <constraint firstItem="KDM-vX-HEg" firstAttribute="leading" secondItem="50f-4D-pd9" secondAttribute="leading" constant="15" id="HXp-ew-67D"/>
+                            <constraint firstItem="Aer-Mm-7kP" firstAttribute="leading" secondItem="7mo-sy-bhb" secondAttribute="trailing" id="Ku1-Pt-ehM"/>
+                            <constraint firstItem="KDM-vX-HEg" firstAttribute="width" secondItem="50f-4D-pd9" secondAttribute="width" multiplier="0.3" id="UdJ-08-ve8"/>
+                            <constraint firstItem="7mo-sy-bhb" firstAttribute="top" secondItem="50f-4D-pd9" secondAttribute="top" id="cUZ-Wd-kM3"/>
+                            <constraint firstAttribute="bottom" secondItem="Aer-Mm-7kP" secondAttribute="bottom" id="gWc-qv-kUj"/>
+                            <constraint firstAttribute="bottom" secondItem="KDM-vX-HEg" secondAttribute="bottom" id="hdJ-Qq-NdE"/>
+                            <constraint firstItem="7mo-sy-bhb" firstAttribute="leading" secondItem="KDM-vX-HEg" secondAttribute="trailing" id="ll8-ua-6CN"/>
+                            <constraint firstItem="KDM-vX-HEg" firstAttribute="top" secondItem="50f-4D-pd9" secondAttribute="top" id="oKL-lO-j21"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="DQr-gg-ugc"/>
+                        <outlet property="delegate" destination="-1" id="bp2-bq-CQ9"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="S2j-s2-tx2" secondAttribute="trailing" id="He4-pq-9Lc"/>
+                <constraint firstAttribute="bottom" secondItem="S2j-s2-tx2" secondAttribute="bottom" id="ciK-f1-Rr7"/>
+                <constraint firstItem="S2j-s2-tx2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dcB-Jj-lPo"/>
+                <constraint firstItem="S2j-s2-tx2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uES-3k-4Hf"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

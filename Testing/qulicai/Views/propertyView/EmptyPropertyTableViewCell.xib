@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="EmptyPropertyTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="249.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_assets_details_image" translatesAutoresizingMaskIntoConstraints="NO" id="lFT-bJ-75V">
+                        <rect key="frame" x="122" y="25" width="130" height="130"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="130" id="3jE-Yi-nc8"/>
+                            <constraint firstAttribute="width" secondItem="lFT-bJ-75V" secondAttribute="height" multiplier="1:1" id="MQz-1X-h0n"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无资产流水" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FnR-ox-SQv">
+                        <rect key="frame" x="144" y="170" width="86" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="137" id="UNy-BQ-bhp"/>
+                            <constraint firstAttribute="height" constant="20" id="Yxr-U9-ctH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FnR-ox-SQv" firstAttribute="top" secondItem="lFT-bJ-75V" secondAttribute="bottom" constant="15" id="1KU-kX-wum"/>
+                    <constraint firstItem="lFT-bJ-75V" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="LcU-nM-0YT"/>
+                    <constraint firstItem="lFT-bJ-75V" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="qp5-Va-mga"/>
+                    <constraint firstItem="FnR-ox-SQv" firstAttribute="centerX" secondItem="lFT-bJ-75V" secondAttribute="centerX" id="vvA-WJ-Bop"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="emptyImageTopConstraint" destination="LcU-nM-0YT" id="Gke-ko-cCe"/>
+            </connections>
+            <point key="canvasLocation" x="26.5" y="52"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="empty_assets_details_image" width="125" height="162"/>
+    </resources>
+</document>

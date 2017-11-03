@@ -1,0 +1,30 @@
+platform :ios, '8.0'
+
+target 'qulicai' do
+
+pod 'AFNetworking'
+pod 'Masonry'
+pod 'MJRefresh'
+pod 'SDWebImage'
+pod 'YTKNetwork'
+pod 'YYKit'
+pod 'SimpleKeychain'
+pod 'UITableView+FDTemplateLayoutCell'
+pod 'MJExtension'
+pod 'SVProgressHUD'
+pod 'TOWebViewController'
+pod 'WZLBadge'
+pod 'DZNWebViewController'
+pod 'SGQRCode'
+
+pod 'AliyunOSSiOS'
+pod 'CYLTableViewPlaceHolder'
+
+
+pod 'UMengAnalytics-NO-IDFA'
+pod 'SDCycleScrollView','~> 1.66'
+pod 'MTLog'
+pod 'Bugtags'
+
+end
+
